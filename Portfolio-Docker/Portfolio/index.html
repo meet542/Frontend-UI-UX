@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio of Meet Rambadia, an Electronics & Communication Engineering student focused on Java, Spring Boot, DevOps, and modern web development." />
+    <title>Meet Rambadia | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="logo" aria-label="Meet Rambadia home">Meet</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Developer portfolio</p>
+            <h1>
+              Hi, I&apos;m <span>Meet Rambadia</span>
+            </h1>
+            <div class="typing-wrapper">
+              <span class="prefix">I&apos;m a</span>
+              <span class="dynamic-text"></span>
+              <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+              I am an Electronics &amp; Communication Engineering student with a strong interest in building reliable software, exploring modern backend architecture, and sharpening my skills across Java, Spring Boot, DevOps, and web technologies.
+            </p>
+            <div class="hero-actions">
+              <a href="resume.html" class="btn btn-primary">View Resume</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="social-row">
+          <a href="https://github.com/meet542" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/meet-rambadia-0066002b5/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:meet@example.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="terminal-card glass-card">
+              <div class="terminal-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line"><span class="prompt">$</span> whoami</div>
+                <div class="terminal-line value">Meet Rambadia</div>
+                <div class="terminal-line"><span class="prompt">$</span> focus</div>
+                <div class="terminal-line value">Java • Spring Boot • DevOps</div>
+                <div class="terminal-line"><span class="prompt">$</span> status</div>
+                <div class="terminal-line value">Building reliable systems with care</div>
+              </div>
+              <div class="tech-badges">
+                <span>Java</span>
+                <span>Spring</span>
+                <span>Docker</span>
+                <span>Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What I bring</p>
+            <h2>Crafting thoughtful software</h2>
+            <p>
+              I combine practical engineering habits with a calm, modern approach to creating dependable digital products.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="info-card glass-card reveal">
+              <i class="fa-solid fa-code"></i>
+              <h3>Backend focus</h3>
+              <p>Strong interest in building APIs, service layers, and database-driven applications.</p>
+            </article>
+            <article class="info-card glass-card reveal">
+              <i class="fa-solid fa-rocket"></i>
+              <h3>Growth mindset</h3>
+              <p>Constantly improving through projects, learning, and problem-solving challenges.</p>
+            </article>
+            <article class="info-card glass-card reveal">
+              <i class="fa-solid fa-layer-group"></i>
+              <h3>Balanced design</h3>
+              <p>Brings a polished, minimalist presentation style to both code and user experience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Meet Rambadia. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com/meet542" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/meet-rambadia-0066002b5/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:meet@example.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
