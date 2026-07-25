@@ -1,5 +1,4 @@
 const navLinks = Array.from(document.querySelectorAll('.nav-link'));
-const sections = Array.from(document.querySelectorAll('main section'));
 const navMenu = document.querySelector('.nav-menu');
 const navToggle = document.querySelector('.nav-toggle');
 const backToTop = document.querySelector('.back-to-top');
@@ -46,26 +45,6 @@ function typeLoop() {
 
 typeLoop();
 
-// Active nav highlighting
-function setActiveLink() {
-  const scrollPosition = window.scrollY + 140;
-
-  sections.forEach((section) => {
-    const top = section.offsetTop;
-    const bottom = top + section.offsetHeight;
-
-    if (scrollPosition >= top && scrollPosition < bottom) {
-      const id = section.getAttribute('id');
-      navLinks.forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-      });
-    }
-  });
-}
-
-window.addEventListener('scroll', setActiveLink);
-window.addEventListener('load', setActiveLink);
-
 // Mobile menu toggle
 navToggle?.addEventListener('click', () => {
   navMenu?.classList.toggle('is-open');
@@ -77,20 +56,6 @@ navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     navMenu?.classList.remove('is-open');
     navToggle?.setAttribute('aria-expanded', 'false');
-  });
-});
-
-// Smooth scrolling for in-page links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', (event) => {
-    const targetId = anchor.getAttribute('href');
-    if (!targetId || targetId === '#') return;
-
-    const targetSection = document.querySelector(targetId);
-    if (!targetSection) return;
-
-    event.preventDefault();
-    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 
